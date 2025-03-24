@@ -1,5 +1,7 @@
 package sington;
 
+import java.io.Serializable;
+
 public class Settings {
     private Settings() {}
 

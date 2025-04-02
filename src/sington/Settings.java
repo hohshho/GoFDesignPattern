@@ -12,4 +12,8 @@ public class Settings {
     public static Settings getInstance() {
         return SettingsHolder.INSTANCE;
     }
+
+    protected Object readResolve() {
+        return getInstance();
+    }
 }

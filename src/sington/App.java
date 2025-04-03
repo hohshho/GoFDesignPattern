@@ -1,22 +1,22 @@
 package sington;
 
 import java.io.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 public class App {
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Settings settings1 = Settings.getInstance();
-        Settings settings2 = null;
+    public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        Settings settings = Settings.INSTANCE;
 
-        try(ObjectOutput out = new ObjectOutputStream(new FileOutputStream("settings.obj"))) {
-            out.writeObject(settings1);
+        Settings settings1 = null;
+        Constructor<?>[] declaredConstructors = Settings.class.getDeclaredConstructors();
+        for(Constructor<?> constructor : declaredConstructors){
+            constructor.setAccessible(true);
+            settings1 = (Settings) constructor.newInstance("INSTANCE");
         }
 
-        try(ObjectInput in = new ObjectInputStream(new FileInputStream("settings.obj"))) {
-            settings2 = (Settings) in.readObject();
-        }
-
-        System.out.println(settings1 == settings2);
+        System.out.println(settings1 == settings);
     }
 }
 

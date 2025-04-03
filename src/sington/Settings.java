@@ -2,18 +2,8 @@ package sington;
 
 import java.io.Serializable;
 
-public class Settings {
-    private Settings() {}
+public enum Settings {
 
-    private static class SettingsHolder {
-        private static final Settings INSTANCE = new Settings();
-    }
+    INSTANCE;
 
-    public static Settings getInstance() {
-        return SettingsHolder.INSTANCE;
-    }
-
-    protected Object readResolve() {
-        return getInstance();
-    }
 }

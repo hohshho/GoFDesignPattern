@@ -1,5 +1,8 @@
 package factorymethod;
 
+import abstractfactory.Anchor;
+import abstractfactory.Wheel;
+
 public class Ship {
 
     private String name;
@@ -7,6 +10,10 @@ public class Ship {
     private String color;
 
     private String logo;
+
+    private Wheel wheel;
+
+    private Anchor anchor;
 
     public String getName() {
         return name;
@@ -32,4 +39,18 @@ public class Ship {
         this.logo = logo;
     }
 
+    public Anchor getAnchor() {
+        return this.anchor;
+    }
+
+    public Wheel getWheel() {
+        return this.wheel;
+    }
+    public void setAnchor(Anchor anchor) {
+        this.anchor = anchor;
+    }
+
+    public void setWheel(Wheel wheel) {
+        this.wheel = wheel;
+    }
 }

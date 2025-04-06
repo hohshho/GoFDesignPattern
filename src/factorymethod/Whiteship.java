@@ -1,8 +1,8 @@
 package factorymethod;
 
-public class WhiteShip extends Ship{
+public class Whiteship extends Ship{
 
-    public WhiteShip() {
+    public Whiteship() {
         setName("whiteShip");
         setLogo("w");
         setColor("White");

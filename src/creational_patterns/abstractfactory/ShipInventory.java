@@ -1,8 +1,8 @@
-package abstractfactory;
+package creational_patterns.abstractfactory;
 
 
-import factorymethod.Ship;
-import factorymethod.ShipFactory;
+import creational_patterns.factorymethod.Ship;
+import creational_patterns.factorymethod.ShipFactory;
 
 public class ShipInventory {
 

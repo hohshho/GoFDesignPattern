@@ -1,4 +1,4 @@
-package factorymethod.ex;
+package creational_patterns.factorymethod.ex;
 
 import java.util.Calendar;
 import java.util.Locale;

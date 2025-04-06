@@ -1,8 +1,8 @@
-package abstractfactory;
+package creational_patterns.abstractfactory;
 
-import factorymethod.DefaultShipFactory;
-import factorymethod.Ship;
-import factorymethod.Whiteship;
+import creational_patterns.factorymethod.DefaultShipFactory;
+import creational_patterns.factorymethod.Ship;
+import creational_patterns.factorymethod.Whiteship;
 
 public class WhiteshipFactory extends DefaultShipFactory {
 

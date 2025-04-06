@@ -1,4 +1,4 @@
-package sington;
+package creational_patterns.sington;
 
 import java.io.*;
 import java.lang.reflect.Constructor;

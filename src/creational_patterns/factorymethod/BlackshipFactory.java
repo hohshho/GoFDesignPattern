@@ -1,7 +1,6 @@
-package factorymethod;
+package creational_patterns.factorymethod;
 
-public class WhiteshipFactory implements ShipFactory{
-
+public class BlackshipFactory implements ShipFactory{
     @Override
     public void sendEmailTo(String email, Ship ship) {
 
@@ -9,6 +8,6 @@ public class WhiteshipFactory implements ShipFactory{
 
     @Override
     public Ship createShip() {
-        return new Whiteship();
+        return new BlackShip();
     }
 }

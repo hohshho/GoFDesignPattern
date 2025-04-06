@@ -1,4 +1,4 @@
-package sington;
+package creational_patterns.sington;
 
 public class RuntimeExample {
 

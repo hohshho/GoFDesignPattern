@@ -1,7 +1,7 @@
-package factorymethod;
+package creational_patterns.factorymethod;
 
-import abstractfactory.Anchor;
-import abstractfactory.Wheel;
+import creational_patterns.abstractfactory.Anchor;
+import creational_patterns.abstractfactory.Wheel;
 
 public class Ship {
 

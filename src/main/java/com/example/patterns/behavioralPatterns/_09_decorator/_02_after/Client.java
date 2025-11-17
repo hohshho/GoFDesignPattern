@@ -1,4 +1,4 @@
-package com.example.patterns.behavioralPatterns._09_decorator._01_before;
+package com.example.patterns.behavioralPatterns._09_decorator._02_after;
 
 public class Client {
 
@@ -8,7 +8,8 @@ public class Client {
         this.commentService = commentService;
     }
 
-    public void writeComment(String comment){
+    public void writeComment(String comment) {
+
         commentService.addComment(comment);
     }
 
